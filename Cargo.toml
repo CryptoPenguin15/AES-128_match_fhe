@@ -1,0 +1,15 @@
+[package]
+name = "aes_match_value_tfhe"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+cpu = []
+gpu = ["tfhe/gpu"]
+
+[dependencies]
+tfhe = { version = "1.4.2", features = ["integer"] }
+# GPU enabled manually in the static Cargo.toml
+# tfhe = { version = "1.4.2", features = ["integer", "gpu"] }
+rayon = "1.11.0"
