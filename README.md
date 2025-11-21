@@ -1,4 +1,5 @@
 cargo test --release -- --nocapture
+cargo test --release --features gpu -- --nocapture
 
 # Design
 
